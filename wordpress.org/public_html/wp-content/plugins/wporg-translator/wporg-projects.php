@@ -13,7 +13,10 @@ add_filter( 'translator_textdomains', function( $td ) {
 			break;
 		case 'pub/wporg-themes':
 			$td[] = 'wporg-themes';
-		break;
+			break;
+		case 'pub/wporg-learn-2020':
+			$td[] = 'wporg-learn';
+			break;
 	}
 
 	$td[] = 'wporg';
@@ -46,10 +49,13 @@ add_filter( 'translator_projects', function( $projects ) {
 			break;
 		case 'pub/wporg-themes':
 			$projects[] = 'meta/themes';
-		break;
+			break;
+		case 'pub/wporg-learn-2020':
+			$projects[] = 'meta/learn-wordpress';
+			break;
 		case 'pub/wporg-main':
 			// Always loaded.
-		break;
+			break;
 	}
 
 	$projects[] = 'meta/wordpress-org';
